@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/SimpleSoftwareIO/simple-qrcode.svg?branch=master)](https://travis-ci.org/SimpleSoftwareIO/simple-qrcode) [![Latest Stable Version](https://poser.pugx.org/simplesoftwareio/simple-qrcode/v/stable.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode) [![Latest Unstable Version](https://poser.pugx.org/simplesoftwareio/simple-qrcode/v/unstable.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode) [![License](https://poser.pugx.org/simplesoftwareio/simple-qrcode/license.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode) [![Total Downloads](https://poser.pugx.org/simplesoftwareio/simple-qrcode/downloads.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode)
 
-#### [Deutsch](http://www.simplesoftware.io/#/docs/simple-qrcode/de) | [Español](http://www.simplesoftware.io/#/docs/simple-qrcode/es) | [Français](http://www.simplesoftware.io/#/docs/simple-qrcode/fr) | [Italiano](http://www.simplesoftware.io/#/docs/simple-qrcode/it) | [Português](http://www.simplesoftware.io/#/docs/simple-qrcode/pt-br) | [Русский](http://www.simplesoftware.io/#/docs/simple-qrcode/ru) | [日本語](http://www.simplesoftware.io/#/docs/simple-qrcode/ja) | [한국어](http://www.simplesoftware.io/#/docs/simple-qrcode/kr) | [हिंदी](http://www.simplesoftware.io/#/docs/simple-qrcode/hi) | [简体中文](http://www.simplesoftware.io/#/docs/simple-qrcode/zh-cn) | [العربية](https://www.simplesoftware.io/#/docs/simple-qrcode/ar)
+#### [Deutsch](http://www.simplesoftware.io/#/docs/simple-qrcode/de) | [Español](http://www.simplesoftware.io/#/docs/simple-qrcode/es) | [Français](http://www.simplesoftware.io/#/docs/simple-qrcode/fr) | [Italiano](http://www.simplesoftware.io/#/docs/simple-qrcode/it) | [Português](http://www.simplesoftware.io/#/docs/simple-qrcode/pt-br) | [Русский](http://www.simplesoftware.io/#/docs/simple-qrcode/ru) | [日本語](http://www.simplesoftware.io/#/docs/simple-qrcode/ja) | [한국어](http://www.simplesoftware.io/#/docs/simple-qrcode/kr) | [हिंदी](http://www.simplesoftware.io/#/docs/simple-qrcode/hi) | [简体中文](http://www.simplesoftware.io/#/docs/simple-qrcode/zh-cn) | [العربية](docs/simple-qrcode/ar)
 
 - [イントロダクション](#docs-introduction)
 - [アップグレードガイド](#docs-upgrade)
@@ -178,7 +178,7 @@ Laravel Blade に以下の様に書くことで モダンなブラウザに表�
 
 #### スタイル `(string $style, float $size = 0.5)`
 
-ブロックのスタイルは`style`メソッドを使用して`square`、`dot`、`round`に変更できます。 
+ブロックのスタイルは`style`メソッドを使用して`square`、`dot`、`round`に変更できます。
 これはQRコードの内部のブロックを変更します。
 2つめのパラメーターは`dot`と`round`の大きさを指定します。
 
@@ -268,10 +268,10 @@ QRコードの生成に使われる文字コードを変更します。デフォ
 
     //中央に画像を配置したQRコードを生成します
 	QrCode::format('png')->merge('path-to-image.png')->generate();
-	
+
     //中央に画像を配置したQRコードを生成します。配置された画像は最大でQRコードの大きさの30%になります。
 	QrCode::format('png')->merge('path-to-image.png', .3)->generate();
-	
+
     //中央に画像を配置したQRコードを生成します。配置された画像は最大でQRコードの大きさの30%になります。
 	QrCode::format('png')->merge('http://www.google.com/someimage.png', .3, true)->generate();
 
@@ -288,7 +288,7 @@ QRコードの生成に使われる文字コードを変更します。デフォ
 
 	// 中央に画像を配置したQRコードを生成します
 	QrCode::format('png')->mergeString(Storage::get('path/to/image.png'))->generate();
-	
+
 	// 中央に画像を配置したQRコードを生成します。配置された画像は最大でQRコードの大きさの30%になります。
 	QrCode::format('png')->mergeString(Storage::get('path/to/image.png'), .3)->generate();
 
@@ -317,10 +317,10 @@ QRコードの生成に使われる文字コードを変更します。デフォ
 このヘルパーはビットコインの支払用QRコードを生成します。[詳細情報（リンク先は英語です）](https://bitco.in/en/developer-guide#plain-text)
 
 	QrCode::BTC($address, $amount);
-	
+
 	// 0.334BTCを指定したアドレスに送金
 	QrCode::BTC('bitcoin address', 0.334);
-	
+
 	// いくつかのオプションを付けて0.334BTCを指定したアドレスに送金
 	QrCode::size(500)->BTC('address', 0.0034, [
         'label' => 'my label',
@@ -333,42 +333,42 @@ QRコードの生成に使われる文字コードを変更します。デフォ
 このヘルパーはEメールアドレス、件名、本文を指定してメールを送信するQRコードを生成します。
 
 	QrCode::email($to, $subject, $body);
-	
+
 	// アドレスを指定します
 	QrCode::email('foo@bar.com');
-	
+
 	// アドレス、件名、本文を指定します
 	QrCode::email('foo@bar.com', 'This is the subject.', 'This is the message body.');
-	
+
 	// メールの件名と本文のみを指定します
 	QrCode::email(null, 'This is the subject.', 'This is the message body.');
-	
+
 #### 位置情報
 
 このヘルパーは緯度と経度を指定してGoogleマップなどの地図アプリを開くQRコードを生成します。
 
 	QrCode::geo($latitude, $longitude);
-	
+
 	QrCode::geo(37.822214, -122.481769);
-	
+
 #### 電話番号
 
 このヘルパーは読み取ったときに電話をかけるQRコードを生成します。
 
 	QrCode::phoneNumber($phoneNumber);
-	
+
 	QrCode::phoneNumber('555-555-5555');
 	QrCode::phoneNumber('1-800-Laravel');
-	
+
 #### SMS
 
 このヘルパーは送信先と本文を指定してSMSメッセージを作成するQRコードを生成します。
 
 	QrCode::SMS($phoneNumber, $message);
-	
+
 	// 電話番号が入力済みの状態でSMSメッセージを作成します
 	QrCode::SMS('555-555-5555');
-	
+
 	// 電話番号と本文が入力済みの状態でSMSメッセージを作成します
 	QrCode::SMS('555-555-5555', 'Body of the message');
 
@@ -382,25 +382,25 @@ QRコードの生成に使われる文字コードを変更します。デフォ
 		'password' => 'Password of the network',
 		'hidden' => 'Whether the network is a hidden SSID or not.'
 	]);
-	
+
 	// Wi-Fiのオープンネットワークに接続します
 	QrCode::wiFi([
 		'ssid' => 'Network Name',
 	]);
-	
+
 	// SSIDの公開されていないオープンネットワークに接続します
 	QrCode::wiFi([
 		'ssid' => 'Network Name',
 		'hidden' => 'true'
 	]);
-	
+
 	// 暗号化されたWi-Fiネットワーク接続します
 	QrCode::wiFi([
 		'ssid' => 'Network Name',
 		'encryption' => 'WPA',
 		'password' => 'myPassword'
 	]);
-	
+
 > Wi-Fi接続情報のQRコードは現在のところApple社の製品ではサポートされていません。
 
 <a id="docs-common-usage"></a>
