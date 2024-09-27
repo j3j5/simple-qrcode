@@ -1,7 +1,7 @@
 
 [![Build Status](https://travis-ci.org/SimpleSoftwareIO/simple-qrcode.svg?branch=master)](https://travis-ci.org/SimpleSoftwareIO/simple-qrcode) [![Latest Stable Version](https://poser.pugx.org/simplesoftwareio/simple-qrcode/v/stable.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode) [![Latest Unstable Version](https://poser.pugx.org/simplesoftwareio/simple-qrcode/v/unstable.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode) [![License](https://poser.pugx.org/simplesoftwareio/simple-qrcode/license.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode) [![Total Downloads](https://poser.pugx.org/simplesoftwareio/simple-qrcode/downloads.svg)](https://packagist.org/packages/simplesoftwareio/simple-qrcode)
 
-#### [Deutsch](http://www.simplesoftware.io/#/docs/simple-qrcode/de) | [Español](http://www.simplesoftware.io/#/docs/simple-qrcode/es) | [Français](http://www.simplesoftware.io/#/docs/simple-qrcode/fr) | [Italiano](http://www.simplesoftware.io/#/docs/simple-qrcode/it) | [Português](http://www.simplesoftware.io/#/docs/simple-qrcode/pt-br) | [Русский](http://www.simplesoftware.io/#/docs/simple-qrcode/ru) | [日本語](http://www.simplesoftware.io/#/docs/simple-qrcode/ja) | [한국어](http://www.simplesoftware.io/#/docs/simple-qrcode/kr) | [हिंदी](http://www.simplesoftware.io/#/docs/simple-qrcode/hi) | [简体中文](http://www.simplesoftware.io/#/docs/simple-qrcode/zh-cn) | [العربية](https://www.simplesoftware.io/#/docs/simple-qrcode/ar)
+#### [Deutsch](http://www.simplesoftware.io/#/docs/simple-qrcode/de) | [Español](http://www.simplesoftware.io/#/docs/simple-qrcode/es) | [Français](http://www.simplesoftware.io/#/docs/simple-qrcode/fr) | [Italiano](http://www.simplesoftware.io/#/docs/simple-qrcode/it) | [Português](http://www.simplesoftware.io/#/docs/simple-qrcode/pt-br) | [Русский](http://www.simplesoftware.io/#/docs/simple-qrcode/ru) | [日本語](http://www.simplesoftware.io/#/docs/simple-qrcode/ja) | [한국어](http://www.simplesoftware.io/#/docs/simple-qrcode/kr) | [हिंदी](http://www.simplesoftware.io/#/docs/simple-qrcode/hi) | [简体中文](http://www.simplesoftware.io/#/docs/simple-qrcode/zh-cn) | [العربية](docs/simple-qrcode/ar)
 
 <div dir="rtl">
 
@@ -40,7 +40,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 #### Composer
 
-قم بتشغيل `composer require simplesoftwareio/simple-qrcode "~4"` لإضافة الحزمة. 
+قم بتشغيل `composer require simplesoftwareio/simple-qrcode "~4"` لإضافة الحزمة.
 
 لارافل ستقوم تلقائيا بتنصيب الحزمة.
 
@@ -49,8 +49,8 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 #### عرض الطباعة
 
-واحدة من العناصر التي تستخدم هذه الحزمة لأجل الحصول على QrCodes في كل عروض الطباعة. هذه الخاصية تسمح للمستخدم للرجوع إلى الصفحة الأصلية بعد أن تمت طباعة الكود. 
-حصلنا على هذه النتيجة عن طريق إضافة التالي لتذييل الصفحة footer.blade.php 
+واحدة من العناصر التي تستخدم هذه الحزمة لأجل الحصول على QrCodes في كل عروض الطباعة. هذه الخاصية تسمح للمستخدم للرجوع إلى الصفحة الأصلية بعد أن تمت طباعة الكود.
+حصلنا على هذه النتيجة عن طريق إضافة التالي لتذييل الصفحة footer.blade.php
 <div dir="ltr">
 
 	<div class="visible-print text-center">
@@ -149,7 +149,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 </div>
 
-![200 Pixels](https://raw.githubusercontent.com/SimpleSoftwareIO/simple-qrcode/master/docs/imgs/200-pixels.png?raw=true) ![250 Pixels](https://raw.githubusercontent.com/SimpleSoftwareIO/simple-qrcode/master/docs/imgs/250-pixels.png?raw=true) 
+![200 Pixels](https://raw.githubusercontent.com/SimpleSoftwareIO/simple-qrcode/master/docs/imgs/200-pixels.png?raw=true) ![250 Pixels](https://raw.githubusercontent.com/SimpleSoftwareIO/simple-qrcode/master/docs/imgs/250-pixels.png?raw=true)
 
 #### Color `(int $red, int $green, int $blue, int $alpha = null)`
 
@@ -160,7 +160,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 <div dir="ltr">
 
 	QrCode::color(255, 0, 0); // Red QrCode
-	QrCode::color(255, 0, 0, 25); //Red QrCode with 25% transparency 
+	QrCode::color(255, 0, 0, 25); //Red QrCode with 25% transparency
 
 </div>
 
@@ -173,7 +173,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 <div dir="ltr">
 
 	QrCode::backgroundColor(255, 0, 0); // Red background QrCode
-	QrCode::backgroundColor(255, 0, 0, 25); //Red background QrCode with 25% transparency 
+	QrCode::backgroundColor(255, 0, 0, 25); //Red background QrCode with 25% transparency
 
 </div>
 
@@ -213,11 +213,11 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 #### Style `(string $style, float $size = 0.5)`
 
 
-يمكن تبديل النمط بسهولة بـ`square` أو  `dot` أو`round`. سيؤدي هذا إلى تغيير الكتل داخل 
+يمكن تبديل النمط بسهولة بـ`square` أو  `dot` أو`round`. سيؤدي هذا إلى تغيير الكتل داخل
 سيأثر المعامل الثاني للدالة على الحجم الخاص بالنقاط و الإستدارة
 
 
-التنسيق 
+التنسيق
 
 <div dir="ltr">
 
@@ -324,10 +324,10 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 	//Generates a QrCode with an image centered in the middle.
 	QrCode::format('png')->merge('path-to-image.png')->generate();
-	
+
 	//Generates a QrCode with an image centered in the middle.  The inserted image takes up 30% of the QrCode.
 	QrCode::format('png')->merge('path-to-image.png', .3)->generate();
-	
+
 	//Generates a QrCode with an image centered in the middle.  The inserted image takes up 30% of the QrCode.
 	QrCode::format('png')->merge('http://www.google.com/someimage.png', .3, true)->generate();
 
@@ -348,7 +348,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 	//Generates a QrCode with an image centered in the middle.
 	QrCode::format('png')->mergeString(Storage::get('path/to/image.png'))->generate();
-	
+
 	//Generates a QrCode with an image centered in the middle.  The inserted image takes up 30% of the QrCode.
 	QrCode::format('png')->mergeString(Storage::get('path/to/image.png'), .3)->generate();
 
@@ -357,7 +357,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 #### إستعمالات متقدمة
 
-جميع الدوال تدعم التسلسل. يجب إستدعاء دالة `generate` في الأخير. على سبيل المثال: 
+جميع الدوال تدعم التسلسل. يجب إستدعاء دالة `generate` في الأخير. على سبيل المثال:
 
 <div dir="ltr">
 
@@ -390,10 +390,10 @@ This helper generates a scannable bitcoin to send payments.  [More information](
 <div dir="ltr">
 
 	QrCode::BTC($address, $amount);
-	
+
 	//Sends a 0.334BTC payment to the address
 	QrCode::BTC('bitcoin address', 0.334);
-	
+
 	//Sends a 0.334BTC payment to the address with some optional arguments
 	QrCode::size(500)->BTC('address', 0.0034, [
         'label' => 'my label',
@@ -410,16 +410,16 @@ This helper generates a scannable bitcoin to send payments.  [More information](
 <div dir="ltr">
 
 	QrCode::email($to, $subject, $body);
-	
+
 	//Fills in the to address
 	QrCode::email('foo@bar.com');
-	
+
 	//Fills in the to address, subject, and body of an e-mail.
 	QrCode::email('foo@bar.com', 'This is the subject.', 'This is the message body.');
-	
+
 	//Fills in just the subject and body of an e-mail.
 	QrCode::email(null, 'This is the subject.', 'This is the message body.');
-	
+
 </div>
 
 #### الموقع الجغرافي
@@ -429,7 +429,7 @@ This helper generates a scannable bitcoin to send payments.  [More information](
 <div dir="ltr">
 
 	QrCode::geo($latitude, $longitude);
-	
+
 	QrCode::geo(37.822214, -122.481769);
 
 </div>
@@ -441,7 +441,7 @@ This helper generates a scannable bitcoin to send payments.  [More information](
 <div dir="ltr">
 
 	QrCode::phoneNumber($phoneNumber);
-	
+
 	QrCode::phoneNumber('555-555-5555');
 	QrCode::phoneNumber('1-800-Laravel');
 
@@ -454,10 +454,10 @@ This helper generates a scannable bitcoin to send payments.  [More information](
 <div dir="ltr">
 
 	QrCode::SMS($phoneNumber, $message);
-	
+
 	//Creates a text message with the number filled in.
 	QrCode::SMS('555-555-5555');
-	
+
 	//Creates a text message with the number and message filled in.
 	QrCode::SMS('555-555-5555', 'Body of the message');
 
@@ -475,18 +475,18 @@ This helper generates a scannable bitcoin to send payments.  [More information](
 		'password' => 'Password of the network',
 		'hidden' => 'Whether the network is a hidden SSID or not.'
 	]);
-	
+
 	//Connects to an open WiFi network.
 	QrCode::wiFi([
 		'ssid' => 'Network Name',
 	]);
-	
+
 	//Connects to an open, hidden WiFi network.
 	QrCode::wiFi([
 		'ssid' => 'Network Name',
 		'hidden' => 'true'
 	]);
-	
+
 	//Connects to a secured WiFi network.
 	QrCode::wiFi([
 		'ssid' => 'Network Name',
